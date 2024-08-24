@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reseñas de Ristorante Da Vinci</title>
+        <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <style>
+            body {
+            background-color: #F5F5DC;
+            font-family: "Homer Simpson UI"; 
+            font-size: 18px;
+            }
+    
+            .social{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .letra{
+                font-size: 5rem;
+                margin-bottom: 1rem;
+                font-weight: 700;
+             }
+    
+             .letra2{
+                font-size: 3rem;
+                margin-bottom: 1rem;
+                font-weight: 700;
+             }
+             .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+                h1, h2 { text-align: center; }
+            .review { background-color: #f0f0f0; padding: 20px; margin-bottom: 20px; }
+            .review blockquote { margin: 0; }
+            .review footer { text-align: right; font-style: italic; }
+            input, select{
+            width: 60%;
+            padding: 5px;
+            margin-bottom: 5px;
+            box-sizing: border-box;
+         }
+        </style>
+    </head>
+<body>
+    <header>
+        <a href="#" class="logo">Ristorante Da Vinci</a>
+
+        <nav>
+            <a href="index.html" class="active">Inicio</a>
+            <a href="quienes_somos.html" >Quienes somos</a>
+            <a href="menu.html" >Menú</a>
+            <a href="reserva.html" >Reservas</a>
+            <a href="reseñas.html" >Reseñas</a>
+            <a href="contactenos.html" >Contáctenos</a>
+        </nav>
+    </header>
+    <div style="height: 100px;"></div>
+    <div class="container">
+
+        <h1 class="letra2" class="">Lo que dicen nuestros clientes</h1>
+
+        <div class="review">
+            <blockquote>
+                "¡La comida estuvo deliciosa y el servicio fue excelente! Definitivamente volveremos."
+                <footer>- María G.</footer>
+            </blockquote>
+        </div>
+
+        <div class="review">
+            <blockquote>
+                "El ambiente es muy acogedor y los platos son creativos y llenos de sabor. ¡Muy recomendable!"
+                <footer>- Juan C.</footer>
+            </blockquote>
+        </div>
+
+        <div class="review">
+            <blockquote>
+                "Celebramos nuestro aniversario en este restaurante, y fue una experiencia inolvidable. La atención fue impecable y la comida supero nuestra expectativas. ¡Gracias por hacer nuestra noche muy especial!"
+                <footer>- Ana y Luis</footer>
+            </blockquote>
+        </div>
+
+        <div class="review">
+            <blockquote>
+                "Siempre que visitamos este lugar nos sentimos en casa. El personal es amable y atento, y los platos son exquesitos y abundantes. ¡Lo recomendamos a todos nuestros amigos!"
+                <footer>- Familia Peréz</footer>
+            </blockquote>
+        </div>
+          <label for="comenta" class="letra2">Comenta:</label>
+            <input type="texto" id="comenta" name="comenta" required><br><br>
+            <button type="submit" class="btn">Enviar</button>
+    </div>
+
+</body>
+</html>

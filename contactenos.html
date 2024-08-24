@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctenos</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        body {
+            background-color: #F5F5DC; 
+        }
+        .texto-dorado {
+            color: #8B4513;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Ristorante Da Vinci</a>
+
+        <nav>
+            <a href="index.html" class="active">Inicio</a>
+            <a href="quienes_somos.html" >Quienes somos</a>
+            <a href="menu.html" >Menú</a>
+            <a href="reserva.html" >Reservas</a>
+            <a href="reseñas.html" >Reseñas</a>
+            <a href="contactenos.html" >Contáctenos</a>
+        </nav>
+    </header>
+    <div style="height: 100px;"></div>
+    <div class="container mt-5">
+        <h1 class="texto-dorado">Contáctenos:</h1>
+        <form>
+                <div class="mb-3">
+                    <h2><label for="nombre" class="form-label">Nombre</label></h2>
+                    <input type="text" class="form-control" id="nombre" required>
+                </div>
+                <div class="mb-3">
+                    <h2><label for="correo" class="form-label">Correo Electónico</label></h2>
+                    <input type="email" class="form-control" id="correo" required>  
+                </div>
+                <div class="mb-3">
+                    <h2><label for="mensaje" class="form-label">Mensaje</label></h2>
+                    <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+        <div class="mt-5">
+            <h2>Encuéntranos</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2231.0065618120993!2d-74.8302455422923!3d10.994354662478683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef42cfd6979537f%3A0x36b649ec9fa3cb27!2sMirador%20de%20Los%20Nogales!5e1!3m2!1ses!2sco!4v1723835602655!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div> 
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

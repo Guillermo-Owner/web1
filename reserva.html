@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservar en Ristorante Da Vinci</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        body {
+            background-color: #F5F5DC;
+            font-family: "Homer Simpson UI"; 
+            font-size: 18px;
+        }
+        .texto-dorado {
+            color: #300c91;
+        }
+
+        .social{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .letra{
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+         }
+
+         .letra2{
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+         }
+
+         label{
+            display:block;
+            margin-bottom: 5px;
+         }
+         input, select{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+         }
+
+         button{
+            background-color: #F5F5DC;
+            color: #8B4513;
+            padding: 1px 20px;
+            border: none;
+            cursor: pointer;
+         }
+
+         .btn{
+            border:1px solid transparent;
+            -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+            transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+         }
+
+         .btn::before{
+            content: '';
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            z-index: -1;
+            width: 0%;
+            height: 1px;
+            background: #8B4513;
+            box-shadow: inset 0px 0px 0px #8B4513;
+            display: block;
+            -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+            transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+         }
+         
+         .btn::after{
+            width: 100%;
+         }
+
+         .btn::after{
+            content: '';
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            z-index: -1;
+            width: 0%;
+            height: 1px;
+            background: #8B4513;
+            box-shadow: inset 0px 0px 0px #8B4513;
+            display: block;
+            -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+            transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+         }
+
+         .btn::after{
+            width: 100%;
+         }
+
+         .btn:hover{
+            border-left: 3px solid #8B4513;
+            border-right: 3px solid #8B4513;
+         }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Ristorante Da Vinci</a>
+
+        <nav>
+            <a href="index.html" class="active">Inicio</a>
+            <a href="quienes_somos.html" >Quienes somos</a>
+            <a href="menu.html" >Menú</a>
+            <a href="reserva.html" >Reservas</a>
+            <a href="reseñas.html" >Reseñas</a>
+            <a href="contactenos.html" >Contáctenos</a>
+        </nav>
+    </header>
+    <div style="height: 100px;"></div>
+    <div class="container">
+        <h1 class="letra">Rerserva tu mesa</h1>
+        <form>
+            <label for="nombre" class="letra2">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+            <label for="email" class="letra2">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="hora" class="letra2">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required><br><br>
+            <label for="hora" class="letra2">Hora:</label>
+            <input type="time" id="hora" name="hora" required><br><br>
+            <label for="personas" class="letra2">Numero de Personas: </label>
+            <select id="personas" name="personas" required><br><br>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <button type="submit" class="letra2 btn">Reservar</button>
+    
+
+        </form>
+    </div>
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <div class="social-icons social" >
+        <a href="https://www.facebook.com/guillermo.cantillosantander?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/guillermo_cs071?igsh=bmx4OWo5cW1xcmln"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://x.com/Guiller84378176?t=9KCTf2e-rQdhxLo5zWwrnA&s=09"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+</body>
+</html>
