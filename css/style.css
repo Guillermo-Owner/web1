@@ -1,6 +1,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
+/* Estilo original (escritorio) */
+.sidebar {
+    width: 300px;
+    float: right;
+}
+
+/* Ajuste para móviles */
+@media (max-width: 480px) {
+    .sidebar {
+        width: 100%;
+        float: none;
+        margin-top: 20px; /* Espacio adicional */
+    }
+}
+
 p {
     font-family: "Homer Simpson UI";
   }
