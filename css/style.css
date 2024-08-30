@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
+
 /* Estilo original (escritorio) */
 .sidebar {
     width: 300px;
@@ -42,40 +43,29 @@ body{
     color: #000000;
 }
 
-header{
-    margin-top: 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 1rem 9%;
-    background-color: transparent;
-    filter: drop-shadow(10px);
+header {
+    background-color: #f0f0f0; /* O el color que prefieras */
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
 }
 
-.logo{
-    font-size: 3rem;
-    color: #000000;
-    font-weight: 800;
-    cursor: pointer;
-    transition: 0.5s ease;
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333; /* O el color que prefieras */
 }
 
 .logo:hover{
     transform: scale(1.1);
 }
 
-nav a{
-    font-size: 1.8rem;
-    color: #8B4513;
-    margin-left: 4rem;
-    font-weight: 500;
-    transition: 0.3s ease;
-    border-bottom: 3px solid transparent;
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
 }
 
 nav a:hover,
@@ -110,37 +100,47 @@ section{
     padding: 5rem 9% 5rem;
 }
 
-.home{
+.home {
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 8rem;
-    background-color: #F5F5DC;
+    min-height: calc(100vh - 60px); /* Ajustar altura según el header */
+    padding: 20px;
 }
 
-.home .home-content h1{
-    font-size: 7rem;
-    font-weight: 700;
-    line-height: 1.3;
+.home-img img {
+    max-width: 100%;
+    height: auto;
 }
 
+.home-content {
+    flex: 1;
+    margin-left: 40px;
+}
+
+.home-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.home-content h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.home-content p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    font-size: 20px;
+    color: #333;
+}
 span{
     color: #8B4513;
 }
 
-.home-content h3{
-    font-size: 5rem;
-    margin-bottom: 1rem;
-    font-weight: 700;
-}
-
-.home-content p{
-    font-size: 1.9rem;
-}
-
-.home-img{
-    border-radius: 60%;
-}
 
 .home-img img{
     position: relative;
@@ -156,19 +156,42 @@ span{
     font-weight: 500;
 }
 
-.social-icons a{
-    display: inline-flex;
-    justify-content: center;
+.home {
+    display: flex;
     align-items: center;
-    width: 4rem;
-    height: 4rem;
-    background-color: transparent;
-    border: 0.2rem solid #f7f7f7;
-    font-size: 2rem;
-    border-radius: 50%;
-    margin: 3rem 1.5rem 3rem 0;
-    transition: 0.3s ease;
-    color: #000000;
+    min-height: calc(100vh - 60px); /* Ajustar altura según el header */
+    padding: 20px;
+}
+
+.home-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.home-content {
+    flex: 1;
+    margin-left: 40px;
+}
+
+.home-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.home-content h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.home-content p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    font-size: 20px;
+    color: #333;
 }
 
 .social-icons a:hover{
